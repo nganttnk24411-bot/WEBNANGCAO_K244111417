@@ -17,6 +17,7 @@ import { ProductHttpHandleErrorServiceComponent } from './product-http-handle-er
 import { ServiceProductImageEventComponent } from './bai13/service-product-image-event/service-product-image-event';
 import { ServiceProductImageEventDetailComponent } from './bai13/service-product-image-event-detail/service-product-image-event-detail';
 import { ServiceProductCatalogComponent } from './bai14/service-product-catalog/service-product-catalog';
+import { ServiceGroupCustomersComponent } from './bai18/service-group-customers/service-group-customers';
 @NgModule({
   declarations: [
     App,
@@ -30,6 +31,7 @@ import { ServiceProductCatalogComponent } from './bai14/service-product-catalog/
     ProductListComponent,
     ProductDropdownListComponent,
     ProductHttpHandleErrorServiceComponent,
+    ServiceGroupCustomersComponent,
   ],
   imports: [
     BrowserModule,
@@ -39,10 +41,7 @@ import { ServiceProductCatalogComponent } from './bai14/service-product-catalog/
     ServiceProductImageEventDetailComponent,
     ServiceProductCatalogComponent,
   ],
-  providers: [
-    provideBrowserGlobalErrorListeners(),
-    provideHttpClient(),
-  ],
+  providers: [provideBrowserGlobalErrorListeners(), provideHttpClient()],
   bootstrap: [App],
 })
 export class AppModule {}
