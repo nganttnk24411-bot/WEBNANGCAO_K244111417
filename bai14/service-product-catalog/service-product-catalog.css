@@ -1,0 +1,48 @@
+:host {
+  display: block;
+  min-height: 100vh;
+  padding: 35px;
+  background: #f5f7fb;
+  box-sizing: border-box;
+  font-family: "Times New Roman", serif;
+}
+
+.catalog-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 25px;
+  background: white;
+  table-layout: fixed;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.catalog-table td {
+  border: 1px solid #d1d5db;
+  padding: 12px 15px;
+  color: #333;
+  text-align: center;
+}
+
+.catalog-table tr:first-child td,
+.catalog-table tr:nth-child(3) td {
+  background: #1e4fa3;
+  color: white;
+  font-weight: bold;
+}
+
+.catalog-table tr:nth-child(2) td {
+  background: #eef4ff;
+  font-weight: bold;
+}
+
+.catalog-table tr:not(:first-child):not(:nth-child(2)):not(:nth-child(3)):hover {
+  background: #f1f6ff;
+}
+
+.catalog-table img {
+  width: 65px;
+  height: 65px;
+  object-fit: contain;
+  display: block;
+  margin: auto;
+}
